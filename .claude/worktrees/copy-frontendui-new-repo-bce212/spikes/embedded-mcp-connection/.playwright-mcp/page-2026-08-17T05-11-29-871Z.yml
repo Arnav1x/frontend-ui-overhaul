@@ -1,0 +1,65 @@
+- generic [ref=f1e2]:
+  - navigation [ref=f1e3]:
+    - link "About" [ref=f1e4] [cursor=pointer]:
+      - /url: https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header
+    - link "Store" [ref=f1e5] [cursor=pointer]:
+      - /url: https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US
+    - generic [ref=f1e7]:
+      - generic [ref=f1e8]:
+        - link "Gmail" [ref=f1e10] [cursor=pointer]:
+          - /url: https://mail.google.com/mail/&ogbl
+        - link "Search for Images" [ref=f1e12] [cursor=pointer]:
+          - /url: https://www.google.com/imghp?hl=en&ogbl
+          - text: Images
+      - button "Google apps" [ref=f1e15] [cursor=pointer]
+      - link "Sign in" [ref=f1e20] [cursor=pointer]:
+        - /url: https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+  - img "Google" [ref=f1e23]
+  - search [ref=f1e31]:
+    - generic [ref=f1e33]:
+      - generic [ref=f1e35]:
+        - button "Add files and tools" [ref=f1e40] [cursor=pointer]
+        - combobox "Search" [expanded] [active] [ref=f1e45]:
+          - generic [ref=f1e92]:
+            - text: Trending searches
+            - listbox [ref=f1e93]:
+              - option "chicago bears kyle monangai" [ref=f1e99]
+              - option "flock cameras" [ref=f1e106]
+              - option "cruise ship" [ref=f1e113]
+              - option "bluesky down" [ref=f1e120]
+              - option "indiana flooding indianapolis" [ref=f1e127]
+              - option "the apothecary diaries season 3 trailer" [ref=f1e134]
+              - option "ny yankees news" [ref=f1e141]
+              - option "doj expedited immigration case hearings" [ref=f1e148]
+              - option "publix checkout item limits removed" [ref=f1e155]
+              - option "stone countertop deaths" [ref=f1e162]
+        - generic [ref=f1e46]:
+          - generic [ref=f1e47]:
+            - button "Search by voice" [ref=f1e50] [cursor=pointer]
+            - button "Search by image" [ref=f1e55] [cursor=pointer]
+          - link "AI Mode" [ref=f1e58] [cursor=pointer]
+      - generic [ref=f1e164]:
+        - generic [ref=f1e168]:
+          - button "Google Search" [ref=f1e169] [cursor=pointer]
+          - button "I'm Feeling Lucky" [ref=f1e170] [cursor=pointer]
+        - button "Report inappropriate predictions" [ref=f1e171] [cursor=pointer]
+      - generic [ref=f1e71]:
+        - button "Google Search" [ref=f1e72] [cursor=pointer]
+        - button "I'm Feeling Lucky" [ref=f1e73] [cursor=pointer]
+  - contentinfo [ref=f1e76]:
+    - generic [ref=f1e77]:
+      - generic [ref=f1e78]:
+        - link "Advertising" [ref=f1e79] [cursor=pointer]:
+          - /url: https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+        - link "Business" [ref=f1e80] [cursor=pointer]:
+          - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+        - link "How Search works" [ref=f1e81] [cursor=pointer]:
+          - /url: https://google.com/search/howsearchworks/?fg=1
+      - link "Build, create, and do more with AI tools from Google" [ref=f1e83] [cursor=pointer]:
+        - /url: https://ai.google/helpful-tools/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer
+      - generic [ref=f1e84]:
+        - link "Privacy" [ref=f1e85] [cursor=pointer]:
+          - /url: https://policies.google.com/privacy?hl=en&fg=1
+        - link "Terms" [ref=f1e86] [cursor=pointer]:
+          - /url: https://policies.google.com/terms?hl=en&fg=1
+        - button "Settings" [ref=f1e90] [cursor=pointer]

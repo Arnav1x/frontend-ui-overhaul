@@ -1,0 +1,18 @@
+{
+  "name": "embedded-mcp-connection-spike",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Disposable Electron WebContentsView to Playwright MCP over CDP connection spike.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "validate": "node scripts/validate-cdp.cjs",
+    "inspector": "mcp-inspector --config inspector.mcp.json",
+    "inspector:tools": "mcp-inspector --cli --config inspector.mcp.json --server playwright-cdp --method tools/list"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "2.0.0",
+    "@playwright/mcp": "0.0.78",
+    "electron": "43.2.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "testgen",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Internal desktop shell for browser-test authoring.",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "dev:tools": "node scripts/dev-tools.mjs",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "dev:inspect": "node scripts/dev-inspect.mjs",
+    "inspector": "node scripts/testgen-inspector.mjs",
+    "inspector:tools": "node scripts/testgen-inspector.mjs --cli --server testgen-browser --method tools/list",
+    "playwright:install": "playwright install chromium",
+    "lint": "eslint .",
+    "format": "prettier --check README.md package.json package-lock.json electron.vite.config.ts eslint.config.js prettier.config.mjs tsconfig*.json vitest.config.ts src scripts",
+    "format:write": "prettier --write README.md package.json package-lock.json electron.vite.config.ts eslint.config.js prettier.config.mjs tsconfig*.json vitest.config.ts src scripts",
+    "typecheck": "tsc --noEmit -p tsconfig.main.json && tsc --noEmit -p tsconfig.preload.json && tsc --noEmit -p tsconfig.renderer.json",
+    "test": "vitest run && node --test scripts/testgen-inspector.test.mjs scripts/dev-inspect.test.mjs scripts/dev-tools.test.mjs"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@langchain/core": "1.2.8",
+    "@langchain/openai": "1.5.8",
+    "@modelcontextprotocol/client": "2.0.0-beta.5",
+    "@mui/icons-material": "7.3.6",
+    "@mui/material": "7.3.6",
+    "@playwright/mcp": "0.0.78",
+    "electron": "43.2.0",
+    "langchain": "1.5.9",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@modelcontextprotocol/inspector": "2.0.0",
+    "@playwright/test": "1.62.0-alpha-1783623505000",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.4",
+    "electron-vite": "4.0.0",
+    "eslint": "9.39.4",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-react-hooks": "7.0.1",
+    "eslint-plugin-react-refresh": "0.4.24",
+    "globals": "16.5.0",
+    "prettier": "3.7.4",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.48.1",
+    "vite": "7.3.6",
+    "vitest": "4.1.10"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true,
+    "@modelcontextprotocol/inspector@2.0.0": true
+  }
+}
